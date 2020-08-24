@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		02F74AA724F13EC00008DE35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AA624F13EC00008DE35 /* AppDelegate.swift */; };
 		02F74AA924F13EC00008DE35 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AA824F13EC00008DE35 /* SceneDelegate.swift */; };
-		02F74AAB24F13EC00008DE35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AAA24F13EC00008DE35 /* ViewController.swift */; };
+		02F74AAB24F13EC00008DE35 /* PixabayImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AAA24F13EC00008DE35 /* PixabayImagesViewController.swift */; };
 		02F74AAE24F13EC00008DE35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F74AAC24F13EC00008DE35 /* Main.storyboard */; };
 		02F74AB124F13EC00008DE35 /* Geetika_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AAF24F13EC00008DE35 /* Geetika_Assignment.xcdatamodeld */; };
 		02F74AB324F13EC60008DE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F74AB224F13EC60008DE35 /* Assets.xcassets */; };
 		02F74AB624F13EC60008DE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F74AB424F13EC60008DE35 /* LaunchScreen.storyboard */; };
 		02F74AC124F13EC60008DE35 /* Geetika_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AC024F13EC60008DE35 /* Geetika_AssignmentTests.swift */; };
+		02F74AD024F150D70008DE35 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74ACE24F150D70008DE35 /* APIClient.swift */; };
+		02F74AD324F152F60008DE35 /* ImageResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AD224F152F60008DE35 /* ImageResultModel.swift */; };
+		02F74AD524F156F90008DE35 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AD424F156F90008DE35 /* Constants.swift */; };
+		02F74AD824F15A8C0008DE35 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AD724F15A8C0008DE35 /* ImagesViewModel.swift */; };
+		02F74ADA24F168FB0008DE35 /* ImageHitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AD924F168FB0008DE35 /* ImageHitViewModel.swift */; };
+		02F74ADF24F18C110008DE35 /* ImageHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74ADE24F18C100008DE35 /* ImageHit.swift */; };
+		02F74AE124F1B5330008DE35 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AE024F1B5330008DE35 /* DatabaseManager.swift */; };
+		02F74AF424F1D1860008DE35 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AF324F1D1860008DE35 /* SearchViewModel.swift */; };
+		02F74AF724F2723B0008DE35 /* ViewController+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AF624F2723B0008DE35 /* ViewController+Addition.swift */; };
+		02F74AFE24F3031C0008DE35 /* PixabayImagesViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AFD24F3031C0008DE35 /* PixabayImagesViewController+TableView.swift */; };
+		02F74B0024F30F150008DE35 /* PixabayImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74AFF24F30F150008DE35 /* PixabayImagesCollectionViewCell.swift */; };
+		02F74B0424F3B2AE0008DE35 /* PopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F74B0224F3B2AE0008DE35 /* PopUpView.xib */; };
+		02F74B0524F3B2AE0008DE35 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74B0324F3B2AE0008DE35 /* PopUpView.swift */; };
+		02F74B0824F3B9730008DE35 /* SearchText+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74B0624F3B9730008DE35 /* SearchText+CoreDataClass.swift */; };
+		02F74B0924F3B9730008DE35 /* SearchText+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74B0724F3B9730008DE35 /* SearchText+CoreDataProperties.swift */; };
+		02F74B0B24F3C9B30008DE35 /* PixabayImagesViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F74B0A24F3C9B30008DE35 /* PixabayImagesViewController+CollectionView.swift */; };
+		04E1300C7A11433CEEA1FBE8 /* Pods_Geetika_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBB812B457E7730F99E2212 /* Pods_Geetika_AssignmentTests.framework */; };
+		BD986789FD7E95200BE4E57D /* Pods_Geetika_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 596D8B8C72FDFF6ADDB38B62 /* Pods_Geetika_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +49,7 @@
 		02F74AA324F13EC00008DE35 /* Geetika_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geetika_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F74AA624F13EC00008DE35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02F74AA824F13EC00008DE35 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02F74AAA24F13EC00008DE35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02F74AAA24F13EC00008DE35 /* PixabayImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixabayImagesViewController.swift; sourceTree = "<group>"; };
 		02F74AAD24F13EC00008DE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02F74AB024F13EC00008DE35 /* Geetika_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Geetika_Assignment.xcdatamodel; sourceTree = "<group>"; };
 		02F74AB224F13EC60008DE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +58,28 @@
 		02F74ABC24F13EC60008DE35 /* Geetika_AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Geetika_AssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F74AC024F13EC60008DE35 /* Geetika_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geetika_AssignmentTests.swift; sourceTree = "<group>"; };
 		02F74AC224F13EC60008DE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F74ACE24F150D70008DE35 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		02F74AD224F152F60008DE35 /* ImageResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultModel.swift; sourceTree = "<group>"; };
+		02F74AD424F156F90008DE35 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		02F74AD724F15A8C0008DE35 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		02F74AD924F168FB0008DE35 /* ImageHitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHitViewModel.swift; sourceTree = "<group>"; };
+		02F74ADE24F18C100008DE35 /* ImageHit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHit.swift; sourceTree = "<group>"; };
+		02F74AE024F1B5330008DE35 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		02F74AF324F1D1860008DE35 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		02F74AF624F2723B0008DE35 /* ViewController+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Addition.swift"; sourceTree = "<group>"; };
+		02F74AFD24F3031C0008DE35 /* PixabayImagesViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PixabayImagesViewController+TableView.swift"; sourceTree = "<group>"; };
+		02F74AFF24F30F150008DE35 /* PixabayImagesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixabayImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		02F74B0224F3B2AE0008DE35 /* PopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpView.xib; sourceTree = "<group>"; };
+		02F74B0324F3B2AE0008DE35 /* PopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		02F74B0624F3B9730008DE35 /* SearchText+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchText+CoreDataClass.swift"; sourceTree = "<group>"; };
+		02F74B0724F3B9730008DE35 /* SearchText+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SearchText+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		02F74B0A24F3C9B30008DE35 /* PixabayImagesViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PixabayImagesViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		1A59DB62E803793ACF965F39 /* Pods-Geetika_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geetika_Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Geetika_Assignment/Pods-Geetika_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		4FBB812B457E7730F99E2212 /* Pods_Geetika_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geetika_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		596D8B8C72FDFF6ADDB38B62 /* Pods_Geetika_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geetika_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF67962A7DC098B39552D5E5 /* Pods-Geetika_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geetika_Assignment.release.xcconfig"; path = "Target Support Files/Pods-Geetika_Assignment/Pods-Geetika_Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		C9DE95FB796B2BABACDAE022 /* Pods-Geetika_AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geetika_AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Geetika_AssignmentTests/Pods-Geetika_AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCA7C42A030C8916418012C2 /* Pods-Geetika_AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geetika_AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Geetika_AssignmentTests/Pods-Geetika_AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD986789FD7E95200BE4E57D /* Pods_Geetika_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E1300C7A11433CEEA1FBE8 /* Pods_Geetika_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +108,8 @@
 				02F74AA524F13EC00008DE35 /* Geetika_Assignment */,
 				02F74ABF24F13EC60008DE35 /* Geetika_AssignmentTests */,
 				02F74AA424F13EC00008DE35 /* Products */,
+				2367087813AA08133370C440 /* Pods */,
+				653EABCF56859CDE0D9636C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +125,13 @@
 		02F74AA524F13EC00008DE35 /* Geetika_Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				02F74AA624F13EC00008DE35 /* AppDelegate.swift */,
-				02F74AA824F13EC00008DE35 /* SceneDelegate.swift */,
-				02F74AAA24F13EC00008DE35 /* ViewController.swift */,
-				02F74AAC24F13EC00008DE35 /* Main.storyboard */,
+				02F74ACC24F150D70008DE35 /* Application */,
+				02F74ADD24F17E3B0008DE35 /* ViewModels */,
+				02F74AD624F159320008DE35 /* Models */,
+				02F74AF824F300B10008DE35 /* Views */,
+				02F74AFC24F301C90008DE35 /* CoreDataClass */,
 				02F74AB224F13EC60008DE35 /* Assets.xcassets */,
-				02F74AB424F13EC60008DE35 /* LaunchScreen.storyboard */,
 				02F74AB724F13EC60008DE35 /* Info.plist */,
-				02F74AAF24F13EC00008DE35 /* Geetika_Assignment.xcdatamodeld */,
 			);
 			path = Geetika_Assignment;
 			sourceTree = "<group>";
@@ -102,6 +145,139 @@
 			path = Geetika_AssignmentTests;
 			sourceTree = "<group>";
 		};
+		02F74ACC24F150D70008DE35 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AA824F13EC00008DE35 /* SceneDelegate.swift */,
+				02F74AA624F13EC00008DE35 /* AppDelegate.swift */,
+				02F74AE224F1B5380008DE35 /* DatabaseManager */,
+				02F74ACD24F150D70008DE35 /* Network */,
+				02F74AF524F272230008DE35 /* Helper */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		02F74ACD24F150D70008DE35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				02F74ACE24F150D70008DE35 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		02F74AD624F159320008DE35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AD224F152F60008DE35 /* ImageResultModel.swift */,
+				02F74ADE24F18C100008DE35 /* ImageHit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02F74ADD24F17E3B0008DE35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AD724F15A8C0008DE35 /* ImagesViewModel.swift */,
+				02F74AF324F1D1860008DE35 /* SearchViewModel.swift */,
+				02F74AD924F168FB0008DE35 /* ImageHitViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		02F74AE224F1B5380008DE35 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AE024F1B5330008DE35 /* DatabaseManager.swift */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		02F74AF524F272230008DE35 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AD424F156F90008DE35 /* Constants.swift */,
+				02F74AF624F2723B0008DE35 /* ViewController+Addition.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		02F74AF824F300B10008DE35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AFA24F301580008DE35 /* Storyboard */,
+				02F74AF924F300C10008DE35 /* Controller */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02F74AF924F300C10008DE35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AAA24F13EC00008DE35 /* PixabayImagesViewController.swift */,
+				02F74B0A24F3C9B30008DE35 /* PixabayImagesViewController+CollectionView.swift */,
+				02F74AFD24F3031C0008DE35 /* PixabayImagesViewController+TableView.swift */,
+				02F74AFB24F301840008DE35 /* CustomCells */,
+				02F74B0124F3B2AE0008DE35 /* PopUpview */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02F74AFA24F301580008DE35 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AAC24F13EC00008DE35 /* Main.storyboard */,
+				02F74AB424F13EC60008DE35 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		02F74AFB24F301840008DE35 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				02F74AFF24F30F150008DE35 /* PixabayImagesCollectionViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		02F74AFC24F301C90008DE35 /* CoreDataClass */ = {
+			isa = PBXGroup;
+			children = (
+				02F74B0624F3B9730008DE35 /* SearchText+CoreDataClass.swift */,
+				02F74B0724F3B9730008DE35 /* SearchText+CoreDataProperties.swift */,
+				02F74AAF24F13EC00008DE35 /* Geetika_Assignment.xcdatamodeld */,
+			);
+			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		02F74B0124F3B2AE0008DE35 /* PopUpview */ = {
+			isa = PBXGroup;
+			children = (
+				02F74B0324F3B2AE0008DE35 /* PopUpView.swift */,
+				02F74B0224F3B2AE0008DE35 /* PopUpView.xib */,
+			);
+			path = PopUpview;
+			sourceTree = "<group>";
+		};
+		2367087813AA08133370C440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A59DB62E803793ACF965F39 /* Pods-Geetika_Assignment.debug.xcconfig */,
+				BF67962A7DC098B39552D5E5 /* Pods-Geetika_Assignment.release.xcconfig */,
+				C9DE95FB796B2BABACDAE022 /* Pods-Geetika_AssignmentTests.debug.xcconfig */,
+				DCA7C42A030C8916418012C2 /* Pods-Geetika_AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		653EABCF56859CDE0D9636C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				596D8B8C72FDFF6ADDB38B62 /* Pods_Geetika_Assignment.framework */,
+				4FBB812B457E7730F99E2212 /* Pods_Geetika_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F74AC524F13EC60008DE35 /* Build configuration list for PBXNativeTarget "Geetika_Assignment" */;
 			buildPhases = (
+				48491C7875E315385990CD5B /* [CP] Check Pods Manifest.lock */,
 				02F74A9F24F13EC00008DE35 /* Sources */,
 				02F74AA024F13EC00008DE35 /* Frameworks */,
 				02F74AA124F13EC00008DE35 /* Resources */,
+				09ED0C43A2A93A975240A008 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F74AC824F13EC60008DE35 /* Build configuration list for PBXNativeTarget "Geetika_AssignmentTests" */;
 			buildPhases = (
+				4683B32C8236675F0CF5FCE2 /* [CP] Check Pods Manifest.lock */,
 				02F74AB824F13EC60008DE35 /* Sources */,
 				02F74AB924F13EC60008DE35 /* Frameworks */,
 				02F74ABA24F13EC60008DE35 /* Resources */,
@@ -184,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F74AB624F13EC60008DE35 /* LaunchScreen.storyboard in Resources */,
+				02F74B0424F3B2AE0008DE35 /* PopUpView.xib in Resources */,
 				02F74AB324F13EC60008DE35 /* Assets.xcassets in Resources */,
 				02F74AAE24F13EC00008DE35 /* Main.storyboard in Resources */,
 			);
@@ -198,14 +378,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09ED0C43A2A93A975240A008 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geetika_Assignment/Pods-Geetika_Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geetika_Assignment/Pods-Geetika_Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Geetika_Assignment/Pods-Geetika_Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4683B32C8236675F0CF5FCE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geetika_AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48491C7875E315385990CD5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geetika_Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02F74A9F24F13EC00008DE35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F74AAB24F13EC00008DE35 /* ViewController.swift in Sources */,
+				02F74AD524F156F90008DE35 /* Constants.swift in Sources */,
+				02F74ADF24F18C110008DE35 /* ImageHit.swift in Sources */,
+				02F74B0924F3B9730008DE35 /* SearchText+CoreDataProperties.swift in Sources */,
+				02F74AAB24F13EC00008DE35 /* PixabayImagesViewController.swift in Sources */,
+				02F74B0824F3B9730008DE35 /* SearchText+CoreDataClass.swift in Sources */,
+				02F74B0524F3B2AE0008DE35 /* PopUpView.swift in Sources */,
 				02F74AB124F13EC00008DE35 /* Geetika_Assignment.xcdatamodeld in Sources */,
 				02F74AA724F13EC00008DE35 /* AppDelegate.swift in Sources */,
+				02F74AF424F1D1860008DE35 /* SearchViewModel.swift in Sources */,
+				02F74ADA24F168FB0008DE35 /* ImageHitViewModel.swift in Sources */,
+				02F74AD024F150D70008DE35 /* APIClient.swift in Sources */,
+				02F74B0B24F3C9B30008DE35 /* PixabayImagesViewController+CollectionView.swift in Sources */,
+				02F74AE124F1B5330008DE35 /* DatabaseManager.swift in Sources */,
+				02F74AFE24F3031C0008DE35 /* PixabayImagesViewController+TableView.swift in Sources */,
+				02F74B0024F30F150008DE35 /* PixabayImagesCollectionViewCell.swift in Sources */,
+				02F74AD324F152F60008DE35 /* ImageResultModel.swift in Sources */,
+				02F74AD824F15A8C0008DE35 /* ImagesViewModel.swift in Sources */,
+				02F74AF724F2723B0008DE35 /* ViewController+Addition.swift in Sources */,
 				02F74AA924F13EC00008DE35 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +623,7 @@
 		};
 		02F74AC624F13EC60008DE35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A59DB62E803793ACF965F39 /* Pods-Geetika_Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +641,7 @@
 		};
 		02F74AC724F13EC60008DE35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF67962A7DC098B39552D5E5 /* Pods-Geetika_Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +659,7 @@
 		};
 		02F74AC924F13EC60008DE35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DE95FB796B2BABACDAE022 /* Pods-Geetika_AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -419,6 +681,7 @@
 		};
 		02F74ACA24F13EC60008DE35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA7C42A030C8916418012C2 /* Pods-Geetika_AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

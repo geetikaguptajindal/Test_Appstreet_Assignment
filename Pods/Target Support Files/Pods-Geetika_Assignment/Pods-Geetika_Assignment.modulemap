@@ -1,0 +1,6 @@
+framework module Pods_Geetika_Assignment {
+  umbrella header "Pods-Geetika_Assignment-umbrella.h"
+
+  export *
+  module * { export * }
+}
